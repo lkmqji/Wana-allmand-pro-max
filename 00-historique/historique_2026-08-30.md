@@ -100,3 +100,10 @@
   - Ajout d'un fichier [client/vercel.json](file:///client/vercel.json) dédié gérant automatiquement les règles de réécriture SPA (`/index.html`) et les en-têtes HTTP de sécurité/cache.
   - Mise à jour du fichier racine [vercel.json](file:///vercel.json) pour assurer la compatibilité quel que soit le dossier racine choisi sur Vercel (`./` ou `client`).
 
+### 14:23 - Intégration du Nouveau Projet Firebase Dédié (`wana-allmand-pro-max`)
+- **Mise à jour des identifiants Firebase ([client/src/firebase.js](file:///client/src/firebase.js))** :
+  - Remplacement de l'ancienne configuration par les identifiants du nouveau projet Firebase dédié `wana-allmand-pro-max` (`projectId: "wana-allmand-pro-max"`, `authDomain: "wana-allmand-pro-max.firebaseapp.com"`, `appId: "1:181570626367:web:ea9a481c91238aaebe698a"`).
+- **Optimisation des Resource Hints ([client/index.html](file:///client/index.html))** :
+  - Mise à jour des balises `preconnect` et `dns-prefetch` vers `wana-allmand-pro-max.firebaseapp.com`.
+
+

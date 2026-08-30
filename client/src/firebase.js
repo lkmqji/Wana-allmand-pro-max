@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, deleteUser, setPersistence, browserLocalPersistence, updateProfile } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDvW7Gg7S5LHMErZNx3KO3_2fIPBRP_rXk",
-  authDomain: "wana-allmand.firebaseapp.com",
-  projectId: "wana-allmand",
-  storageBucket: "wana-allmand.firebasestorage.app",
-  messagingSenderId: "954044665510",
-  appId: "1:954044665510:web:9c65e33eaecdbc3aebee67",
-  measurementId: "G-HPV9K82EZE"
+  apiKey: "AIzaSyDvF3qkvFl-4PlfWyUZhyQC10_DKGrYo7A",
+  authDomain: "wana-allmand-pro-max.firebaseapp.com",
+  projectId: "wana-allmand-pro-max",
+  storageBucket: "wana-allmand-pro-max.firebasestorage.app",
+  messagingSenderId: "181570626367",
+  appId: "1:181570626367:web:ea9a481c91238aaebe698a",
+  measurementId: "G-ZMT7ZEJVW7"
 };
 
 const app = initializeApp(firebaseConfig);
