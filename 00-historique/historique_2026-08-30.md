@@ -93,3 +93,10 @@
 - **Vérification de l'intégrité et des dépendances** :
   - Contrôle par hachage SHA-256 de tous les fichiers du projet (0 doublon restant).
   - Vérification de l'absence de dossiers `node_modules`.
+
+### 13:37 - Résolution de l'Erreur de Build Vercel (`cd client && npm install`)
+- **Correction de la configuration Vercel (`vercel.json` et `client/vercel.json`)** :
+  - Suppression de la directive personnalisée `installCommand: "cd client && npm install"` qui provoquait une erreur 1 immédiate sur Vercel lorsque le dossier racine du projet (*Root Directory*) était défini sur `client`.
+  - Ajout d'un fichier [client/vercel.json](file:///client/vercel.json) dédié gérant automatiquement les règles de réécriture SPA (`/index.html`) et les en-têtes HTTP de sécurité/cache.
+  - Mise à jour du fichier racine [vercel.json](file:///vercel.json) pour assurer la compatibilité quel que soit le dossier racine choisi sur Vercel (`./` ou `client`).
+
